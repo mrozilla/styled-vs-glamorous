@@ -1,0 +1,38 @@
+{
+  "name": "styled-vs-glamorous",
+  "version": "0.1.0",
+  "description": "a comparison of 💅 styled-components and 💄 glamorous",
+  "license": "MIT",
+  "repository": "https://github.com/mrozilla/styled-vs-glamorous",
+  "bugs": "https://github.com/mrozilla/styled-vs-glamorous/issues",
+  "author": {
+    "name": "Jan",
+    "email": "jan@mrozilla.cz",
+    "url": "mrozilla.cz"
+  },
+  "dependencies": {
+    "glamor": "^2.20.40",
+    "glamorous": "^4.4.0",
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-scripts": "1.0.11",
+    "source-map-explorer": "^1.4.0",
+    "styled-components": "^2.1.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "analyze": "source-map-explorer build/static/js/main.*",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "key-spacing": [
+      "warn",
+      {
+        "align": "value"
+      }
+    ]
+  }
+}
