@@ -2,29 +2,11 @@
 // Import
 // =============================================================================
 
-// import glamorous from 'glamorous';
 import styled from 'styled-components';
 
 // =============================================================================
 // Styles
 // =============================================================================
-
-// glamorous
-// const Section = glamorous.section(
-//   {
-//     display: 'flex',
-//     flexDirection: 'column',
-//     justifyContent: 'center',
-//     alignItems: 'center',
-//   },
-//   ({ minHeight, paddingTop, paddingBottom, marginTop, marginBottom }) => ({
-//     minHeight,
-//     paddingTop,
-//     paddingBottom,
-//     marginTop,
-//     marginBottom,
-//   })
-// );
 
 // styled-components
 const Section = styled.section`

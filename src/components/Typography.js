@@ -3,29 +3,12 @@
 // =============================================================================
 
 // Styles
-// import glamorous from 'glamorous';
 import styled from 'styled-components';
 import typography from '../styles/typography';
 
 // =============================================================================
 // Title
 // =============================================================================
-
-// glamorous
-// export const Title = glamorous.h3(
-//   {
-//     lineHeight: '1em',
-//     fontFamily: typography.font.family.headings,
-//   },
-//   ({ fontSize, fontWeight, color, textAlign, marginBottom, marginTop }) => ({
-//     fontSize,
-//     fontWeight,
-//     color,
-//     textAlign,
-//     marginBottom,
-//     marginTop,
-//   })
-// );
 
 // styled-components
 export const Title = styled.h3`
@@ -53,31 +36,6 @@ Title.defaultProps = {
 // =============================================================================
 // Text
 // =============================================================================
-
-// glamorous
-// export const Text = glamorous.p(
-//   ({
-//     lineHeight,
-//     fontSize,
-//     fontWeight,
-//     color,
-//     marginBottom,
-//     opacity,
-//     textAlign,
-//     textTransform,
-//     letterSpacing,
-//   }) => ({
-//     lineHeight,
-//     fontSize,
-//     fontWeight,
-//     color,
-//     marginBottom,
-//     opacity,
-//     textAlign,
-//     textTransform,
-//     letterSpacing,
-//   })
-// );
 
 // styled-components
 export const Text = styled.p`
