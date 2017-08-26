@@ -2,14 +2,12 @@
 // Import
 // =============================================================================
 
-import typography from '../styles/typography';
-import color from '../styles/color';
+import { color, typography } from '../styles';
 
 // =============================================================================
 // Reboot
 // =============================================================================
 
-// styled-components
 const reboot = `
   html {
     box-sizing: border-box;
@@ -41,10 +39,6 @@ const reboot = `
     opacity: 0;
   }
   ::selection {
-    background-color: ${color.brand.primary};
-    color: white;
-  }
-  ::-moz-selection {
     background-color: ${color.brand.primary};
     color: white;
   }
