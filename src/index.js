@@ -1,27 +1,16 @@
 // =============================================================================
-// Import
+// import
 // =============================================================================
 
-// React
+// react
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-// Styles
-import { injectGlobal } from 'styled-components';
-import { normalize, reboot } from './styles';
-
-// Screens
+// screens
 import AppScreen from './screens/AppScreen';
 
 // =============================================================================
-// Global styles
-// =============================================================================
-
-injectGlobal`${normalize}`;
-injectGlobal`${reboot}`;
-
-// =============================================================================
-// Go!!!
+// go!!!
 // =============================================================================
 
 ReactDOM.render(<AppScreen />, document.getElementById('root'));
