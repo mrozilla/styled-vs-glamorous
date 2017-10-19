@@ -1,45 +1,60 @@
 // =============================================================================
-// Import
+// import
 // =============================================================================
 
-// React
-import React from 'react';
+// react
+import React, { Component } from 'react';
 
-// Components
-import Section from '../components/Section';
-import Card from '../components/Card';
-import Image from '../components/Image';
-import { Title, Text } from '../components/Typography';
+// styles
+import './AppScreen.css';
+
+// components
+import Main from '../components/Main';
+import ButtonStyled from '../components/ButtonStyled';
+import ButtonGlamorous from '../components/ButtonGlamorous';
 
 // =============================================================================
-// Component
+// component
 // =============================================================================
 
-export default function AppScreen() {
-  return (
-    <Section>
-      <Card width="20vw">
-        <Image
-          src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Franz_Joseph_of_Austria_1910_old.jpg"
-          ratio={1 / 1}
-        />
-        <div style={{ padding: '1rem' }}>
-          <Title>Franz Joseph</Title>
-          <Text marginBottom="1rem">Kaiser</Text>
-          <Text opacity="0.75">
-            <span role="img" aria-label="phone">
-              📞
-            </span>{' '}
-            +43 677 6777 7776
-          </Text>
-          <Text opacity="0.75">
-            <span role="img" aria-label="mail">
-              ✉️
-            </span>{' '}
-            franz@vonhabsburg.at
-          </Text>
-        </div>
-      </Card>
-    </Section>
-  );
+export default class App extends Component {
+  state = {
+    isDoingStuff: false,
+  };
+
+  handleClick = () => {
+    this.setState({
+      isDoingStuff: !this.state.isDoingStuff,
+    });
+  };
+
+  render() {
+    const isDoingStuffClass = this.state.isDoingStuff
+      ? 'button--isDoingStuff'
+      : '';
+    const buttonClass = `button button--large ${isDoingStuffClass}`;
+    return (
+      <Main>
+        <button className={buttonClass} onClick={this.handleClick}>
+          CSS button
+        </button>
+        <ButtonStyled
+          color="purple"
+          size="large"
+          isDoingStuff={this.state.isDoingStuff}
+          onClick={this.handleClick}
+        >
+          Styled button
+        </ButtonStyled>
+        <ButtonGlamorous
+          color="hotpink"
+          size="medium"
+          isDoingStuff={this.state.isDoingStuff}
+          onClick={this.handleClick}
+        >
+          Glamorous button
+        </ButtonGlamorous>
+      </Main>
+    );
+  }
 }
