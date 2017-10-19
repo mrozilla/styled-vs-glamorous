@@ -6,7 +6,7 @@
 import React, { Component } from 'react';
 
 // styles
-import './AppScreen.css';
+import '../components/ButtonCSS.css';
 
 // components
 import Main from '../components/Main';
