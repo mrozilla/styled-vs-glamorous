@@ -24,13 +24,15 @@ If you'd like to compare the bundle sizes both approaches generate:
   import ButtonStyled from '../components/ButtonStyled';
   ```
   and
-  ```javascript
+  ```jsx
   <ButtonStyled
     color="purple"
     size="large"
     isDoingStuff={this.state.isDoingStuff}
     onClick={this.handleClick}
   >
+    Styled button
+  </ButtonStyled>
   ```
 - run `npm run build`
 - run `npm run analyze`
