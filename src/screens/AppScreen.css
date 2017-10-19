@@ -1,0 +1,44 @@
+.button {
+  border: none;
+  outline: none;
+  font-family: inherit;
+  background-color: white;
+  color: coral;
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 999px;
+  box-shadow: 0 0.5rem 1rem;
+  transition: 500ms box-shadow;
+  animation: bounceCSS 250ms infinite alternate;
+}
+
+.button:hover {
+  box-shadow: 0 0.5rem 2rem;
+}
+
+.button::before {
+  content: '👾 ';
+}
+
+@keyframes bounceCSS {
+  0% {
+    transform: scale(1.01);
+  }
+  100% {
+    transform: scale(0.99);
+  }
+}
+
+.button.button--large {
+  padding: 2rem 4rem;
+}
+
+.button.button--isDoingStuff {
+  background-color: rgba(0, 0, 0, 0.05);
+  cursor: progress;
+}
+
+.button.button--isDoingStuff::before {
+  content: '⏳ ';
+}
