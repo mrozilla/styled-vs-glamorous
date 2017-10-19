@@ -2,15 +2,25 @@
 // import
 // =============================================================================
 
-// react
 import React from 'react';
-import ReactDOM from 'react-dom';
-
-// screens
-import AppScreen from './screens/AppScreen';
 
 // =============================================================================
-// go!!!
+// component
 // =============================================================================
 
-ReactDOM.render(<AppScreen />, document.getElementById('root'));
+export default function Main({ children }) {
+  return (
+    <main
+      style={{
+        fontFamily:     'monospace',
+        display:        'flex',
+        alignItems:     'center',
+        justifyContent: 'space-around',
+        flexDirection:  'column',
+        minHeight:      '100vh',
+      }}
+    >
+      {children}
+    </main>
+  );
+}
